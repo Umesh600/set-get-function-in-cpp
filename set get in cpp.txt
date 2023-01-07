@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+
+class employee{
+    
+    private:
+    int age,salary;
+    
+    public:
+     string DOB;
+     
+     void setdata(int a,int b);
+     
+     void getdata(){
+         cout<< "your age is:" << age << endl;
+         cout<< "your salray is:" << salary << endl;
+         cout<< "your DOB is:" << DOB << endl;
+         
+     }
+};
+
+void employee :: setdata(int a,int b){
+  age =a;
+  salary=b;
+   
+   }
+int main() {
+    
+    employee umesh;
+    umesh.DOB="06/06/2001";
+    umesh.setdata(21,25000);
+    umesh.getdata();
+
+    return 0;
+}
+
+OUTPUT:
+
+your age is:21
+your salray is:25000
+your DOB is:06/06/2001
